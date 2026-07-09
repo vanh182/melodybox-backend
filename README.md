@@ -134,32 +134,6 @@ Example API modules include:
 
 ---
 
-# 📸 Screenshots
-
-## Application Architecture
-
-<p align="center">
-<img src="./images/system_architecture.png" width="85%">
-</p>
-
----
-
-## Mobile Application
-
-<p align="center">
-<img src="./images/mobile_app.png" width="80%">
-</p>
-
----
-
-## API Testing
-
-<p align="center">
-<img src="./images/postman_demo.png" width="85%">
-</p>
-
----
-
 # 🚀 Getting Started
 
 ## Clone the repository
