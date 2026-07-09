@@ -11,58 +11,50 @@
 
 # 📖 Overview
 
-Melodybox Backend provides RESTful APIs for a music streaming application.
+Melodybox Backend is a RESTful API service that powers the Melodybox music streaming application.
 
-The backend manages songs, playlists, and music categories while serving audio files and album artwork to the mobile application.
-
-The project follows a simple REST architecture using Express.js and MongoDB, making it easy to extend and maintain.
+The backend manages songs, playlists, and music categories while serving audio files and album artwork. Built with Express.js and MongoDB, the project follows a clean REST architecture that is easy to maintain and extend.
 
 ---
 
 # ✨ Features
 
-- 🎵 Song Management
-- 📂 Music Category Management
-- 🎼 Playlist Management
-- 🖼 Album Artwork Hosting
-- 🎧 Audio File Streaming
-- 🌐 RESTful APIs
-- ☁ MongoDB Data Storage
+* 🎵 Song Management
+* 📂 Music Category Management
+* 🎼 Playlist Management
+* 🖼 Album Artwork Hosting
+* 🎧 Audio File Streaming
+* 🌐 RESTful APIs
+* ☁ MongoDB Data Storage
 
 ---
 
 # 🛠 Tech Stack
 
-| Category | Technologies |
-|----------|--------------|
-| Runtime | Node.js |
-| Framework | Express.js |
-| Database | MongoDB |
-| ODM | Mongoose |
-| Configuration | dotenv |
+| Category      | Technologies |
+| ------------- | ------------ |
+| Runtime       | Node.js      |
+| Framework     | Express.js   |
+| Database      | MongoDB      |
+| ODM           | Mongoose     |
+| Configuration | dotenv       |
 
 ---
 
-# 🏗 System Architecture
+# 🏗 Architecture
 
 ```text
 Mobile Application
         │
         ▼
-   REST API (Express)
+ REST API (Express.js)
         │
         ▼
-Business Logic
+ Business Logic
         │
         ▼
  MongoDB Database
 ```
-
-<p align="center">
-<img src="./images/system_architecture.png" width="85%">
-</p>
-
-> Replace the image above with an architecture diagram if available.
 
 ---
 
@@ -70,13 +62,9 @@ Business Logic
 
 ```text
 MelodyboxBE
-│
 ├── audios/
 ├── images/
 ├── models/
-│     ├── songs.js
-│     ├── playlist.js
-│     └── categories.js
 ├── routes/
 ├── index.js
 ├── package.json
@@ -85,61 +73,41 @@ MelodyboxBE
 
 ---
 
-# 🎼 Core Modules
+# 📸 Screenshots
 
-## 🎵 Songs
+## System Architecture
 
-Manage song information including:
+<p align="center">
+<img src="./images/system_architecture.png" width="85%">
+</p>
 
-- Song title
-- Artist
-- Album artwork
-- Audio file
-- Category
+## API Modules
 
----
+The backend exposes RESTful APIs for the following modules:
 
-## 📂 Categories
+| Module     | Description                 |
+| ---------- | --------------------------- |
+| Songs      | Retrieve and manage songs   |
+| Categories | Manage music categories     |
+| Playlists  | Create and manage playlists |
+| Audio      | Stream audio files          |
 
-Group songs into different music genres or collections.
-
-Examples:
-
-- Vietnamese Music
-- US-UK Music
-- French Music
+> Add screenshots from Postman, Swagger, or your mobile application if available.
 
 ---
 
-## 🎧 Playlists
+# 🚀 How to Run
 
-Provide APIs for playlist creation and management.
+## Prerequisites
 
-Playlists allow users to organize songs into personalized collections.
-
----
-
-# 🌐 REST APIs
-
-Example API modules include:
-
-| Module | Description |
-|---------|-------------|
-| Songs | Retrieve and manage songs |
-| Categories | Manage music categories |
-| Playlists | Create and manage playlists |
-| Audio | Stream audio files |
-
-> Actual API endpoints may vary depending on the project version.
-
----
-
-# 🚀 Getting Started
+* Node.js 18+
+* MongoDB
 
 ## Clone the repository
 
 ```bash
 git clone https://github.com/vanh182/melodybox-backend.git
+cd melodybox-backend
 ```
 
 ## Install dependencies
@@ -162,7 +130,7 @@ MUSIC_DB_URI=your_mongodb_connection_string
 npm start
 ```
 
-The backend will run on:
+The application will run at:
 
 ```text
 http://localhost:3000
@@ -170,25 +138,20 @@ http://localhost:3000
 
 ---
 
-# 📈 Highlights
-
-- RESTful API design
-- Express.js architecture
-- MongoDB integration with Mongoose
-- Static image hosting
-- Static audio hosting
-- Clean project organization
-
----
-
 # 🚀 Future Improvements
 
-- User authentication (JWT)
-- Favorite songs
-- Search and filtering
-- Pagination
-- Music recommendation
-- Docker deployment
-- API documentation with Swagger/OpenAPI
+* JWT Authentication
+* Favorite Songs
+* Search and Filtering
+* Pagination
+* Music Recommendation
+* Docker Deployment
+* Swagger / OpenAPI Documentation
 
 ---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+Feel free to use, modify, and distribute this project for educational and personal purposes.
