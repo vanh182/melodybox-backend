@@ -86,8 +86,6 @@ The backend exposes RESTful APIs for the following modules:
 | Playlists  | Create and manage playlists |
 | Audio      | Stream audio files          |
 
-> Add screenshots from Postman, Swagger, or your mobile application if available.
-
 ---
 
 # 🚀 How to Run
