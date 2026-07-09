@@ -73,13 +73,7 @@ MelodyboxBE
 
 ---
 
-# 📸 Screenshots
-
-## System Architecture
-
-<p align="center">
-<img src="./images/system_architecture.png" width="85%">
-</p>
+# 📸 Screenshots/API Modules
 
 ## API Modules
 
